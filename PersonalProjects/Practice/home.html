@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Practicing for Yardi! </title>
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="myScript.js"></script>
+</head>
+
+<body>
+	<img class="imgOnLeft" src="YardiLogo.png" title="Yardi Logo"/>
+	<h1 name="top">Randal Obringer</h1>
+	<pre>
+509 E. Parkcenter Blvd. Apt.127
+Boise, ID 83706
+937-545-0306
+	</pre>
+	<h3>About Me</h3>
+	<div>
+		<img class="imgOnRight" src="LinkedIn.jpg" title="LinkedIn Profile Picture"/>
+		<p> Transitioning Army Communications Officer looking for a Software Designer/Programmer/Engineer position in the Boise, ID area. 
+		<br /><br />
+		Well rounded Programmer with experience in Web Development, MVC architecture, RDBMS, version control, and the Linux and Windows OS 
+		environments. Possesses strong knowledge of C/C++/Java programming. Quickly masters new software packages and hardware technologies. 
+		Experienced manager versed in all stages of the development cycle successful at managing teams, driving progress toward project milestones, 
+		quality assurance and on-time delivery. Looking to transition out of the Military and get a job as a Software Designer/Programmer/Engineer 
+		in the Boise, ID area.
+		</p>
+		Visit the Yardi website <a href="http://www.yardi.com" target="_blank">here</a> <!--ObringerResume2017.docx-->
+	</div>
+	<h3>Yardi Motto</h3>
+	<p>Take care of our clients, take care of our employees, stay focused, and grow.</p>
+	<div>
+		<h3>Yardi Values and Beliefs</h3>
+		<ul>
+			<li>Trust</li>
+			<li>Respect</li>
+			<li>Integrity</li>
+			<li>Perspective</li>
+			<li>Communication</li>
+			<li>Customer Service</li>
+			<li>Community Service</li>
+			<li>Fun</li>
+			<li>Responsibility</li>
+			<li>Innovation and Intellect</li>
+		</ul>
+	</div>
+	
+	<a href="#top">Return to the top of the page.</a>
+	
+	<div id="buttonZone">
+		<!---<p id="ajaxZone"> </p>
+		<p id="ajaxZone2"> </p>-->
+		<p id="closureZone"> </p>
+		<span>
+			<!--<button type="button" onClick="ajaxFunction('AJAXtoLoad.txt',redDisplay())">Red AJAX!</button>-->
+			<button type="button" onClick="showName()">Show More Name!</button>
+			<button type="button" onClick="turnLightOnOff()">Light!</button>
+			<!--<button type="button" onClick="ajaxFunction()">Red AJAX!</button>-->
+			<button type="button" onClick="showForm()">Fill a Form!</button>
+			<button type="button" onClick="showHidePage()">Show a Page!</button>
+		</span>
+	</div>
+	<div id="room" class="centeredImg">
+		<img id="lightBulb" src="lightOff.png" />
+	</div>
+	
+	<div id="form" style="display:none;">
+		<form>
+			First Name:<br />
+			<input type="text" name="firstName"></input>
+			<br /> Last Name: <br />
+			<input type="text" name="lastName"></input>
+			<br /> Gender? <br />
+			<span>
+				Male<input type="radio" name="gender" value="male"></input>
+				Female<input type="radio" name="gender" value="female"></input>
+			</span>
+			<br />
+			Hobbies?<br />
+			<span>
+				Basketball<input type="checkBox" name="basketball" value="true"></input>
+				Baseball<input type="checkBox" name="" value="true"></input>
+				Volleyball<input type="checkBox" name="basketball" value="true"></input>
+				Soccer<input type="checkBox" name="basketball" value="true"></input>
+				Swimming<input type="checkBox" name="basketball" value="true"></input>
+			</span>
+			<br />
+			<span>
+				Hunting<input type="checkBox" name="basketball" value="true"></input>
+				Hiking<input type="checkBox" name="basketball" value="true"></input>
+				Fishing<input type="checkBox" name="basketball" value="true"></input>
+				Video Games<input type="checkBox" name="basketball" value="true"></input>
+				Jogging<input type="checkBox" name="basketball" value="true"></input>
+			</span>
+			<br />
+			<input type="submit" value="Submit" onClick="hideForm()"></input>
+		</form>
+	</div>
+	
+	<div id="webpage" style="display:none;">
+		<a id="pageLink" href="inside.html" target="pageInside">Click me to change the Page!</a><br />
+		<iframe name="pageInside" src="placeholder.html">
+		</iframe>
+	</div>
+</body>
+</html>

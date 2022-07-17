@@ -1,0 +1,62 @@
+p { 
+	font-size: 14px; 
+	color: black; 
+}
+
+h3 {
+	clear: both;
+}
+
+a:link{
+	color: blue;
+}
+
+a:visited{
+	text-decoration: line-through;
+}
+
+a:hover{
+	color: yellow;
+	background-color: blue;
+}
+
+a:active{
+	color: rgb(204,0,0);
+	background-color: white;
+}
+
+#room {
+	background-color: white;
+	width: 150px;
+}
+
+#me {
+	color: blue;
+	font-size: 20px;
+}
+
+.centeredImg {
+	margin: auto;
+}
+
+.imgOnLeft {
+	float: left;
+	width: 150px;
+	height: 150px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.imgOnRight {
+	float: right;
+	width: 150px;
+	height: 150px;
+	padding-left: 15px;
+}
+
+/*body { 	
+	background-image: url("YardiLogo.png"); 
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}*/

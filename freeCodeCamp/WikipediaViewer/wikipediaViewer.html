@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wikipedia Viewer</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!--Font Awesome icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--peronsal-->
+	<link rel="stylesheet" type="text/css" href="myStyle.css" /> 
+	<script src="myScript.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<h1 class="text-center pageTitle">Wiki Viewer</h1>
+	<div id="" class="container normaltext">
+		<div class="text-center">
+			<span>Click the icon to get a random wikipedia entry!</span>
+			<br />
+			<a id="random" href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-primary" alt="Random Wikipedia link image" title="Get a random wikipedia entry!" target="_blank">
+				<i style="font-size: 30px;" class="fa fa-question"></i>
+			</a>
+			
+			<br />
+			<span>Click the icon to search for a wikipedia entry!</span>
+			<br />
+			
+			<span>
+				<span id="searchField">
+					<input id="searchQuery" name="searchQuery" type="text" placeholder="Type your search here"></input>
+					<button id="cancel"><strong>X</strong></button>
+				</span>
+				<button id="search" class="btn btn-default" title="Get a wikipedia entry!">
+					<i style="font-size: 30px;" class="fa fa-search"></i>
+				</button>
+			</span>
+		</div>
+		
+		<div id="wikiList">
+		</div>
+	</div>
+	<div class="text-center">
+		<p id="errorMsg">First type a search in the field above</p>
+		<p>By Randal Obringer</p>
+	</div>
+</body>
+</html>

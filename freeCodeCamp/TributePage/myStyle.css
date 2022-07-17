@@ -1,0 +1,10 @@
+#tributeFrame {
+	background-color: rgb(240,240,240);
+}
+
+#tributeImg {
+	height:500px;
+	width:400px;
+	margin: auto;
+	padding: 10px;
+}

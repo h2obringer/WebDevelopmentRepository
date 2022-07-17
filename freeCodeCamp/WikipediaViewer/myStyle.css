@@ -1,0 +1,46 @@
+#pageTitle {
+	font-family: 'Cinzel Decorative';
+}
+
+#searchQuery, #searchQuery:focus {
+	/*visibility: hidden;
+	border-color: rgb(163,228,215);
+	border-width: 8px;
+	border-radius: 15px;*/
+	outline: none;
+	border-style: none;
+	padding-left: 5px;
+}
+
+#searchField {
+	display: none;
+	border-style: solid;
+	border-color: rgb(163,228,215);
+	border-width: 8px;
+	border-radius: 15px;
+	padding: 5px;
+	position: relative;
+}
+
+#errorMsg{
+	display: none;
+	color: red;
+	font-size: 14px;
+}
+
+.listEntry {
+	padding-bottom: 15px;
+	background-color: gray;
+	color: white;
+}
+
+.listEntry:hover {
+	color: rgb(163,228,215);
+}
+
+.preview {
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin: 10px;
+}

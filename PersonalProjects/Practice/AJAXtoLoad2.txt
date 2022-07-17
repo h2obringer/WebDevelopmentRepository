@@ -1,0 +1,1 @@
+This text was also loaded with AJAX! It was used with callback functions so we can use this for other AJAX tasks.

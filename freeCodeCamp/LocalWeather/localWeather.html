@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Local Weather</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!--Font Awesome icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--peronsal-->
+	<link rel="stylesheet" type="text/css" href="myStyle.css" /> 
+	<script src="myScript.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<br />
+	<div id="weatherFrame" class="container normaltext">
+		<div id="today">
+			<div class="row">
+				<div class="col-md-12">
+					<button id="changeTempUnitBtn" style="float: left;" class="btn btn-primary">Click for <span id="btnTempUnit">&deg;C</span></button>
+					<img id="poweredBy" src="poweredby-darkbackground.png" alt="Powered by DarkSky img" text="Powered by DarkSky" />
+					<p id="todayheading" class="text-center weatherheading">Today's Weather</p>
+				</div>
+			</div>
+			<div class="row">
+				<div id="todaysummary" class="col-md-3 summarytext">
+					<p id="location"></h1>
+					<p id="todaysummarytext"></p>
+				</div>
+				<div class="col-md-9">
+					<img id="todaysummaryimg" class="img-responsive summaryimg" src="" alt="Today's weather image" title="Today's weather" />
+				</div>
+			</div>
+			<div class="row">
+				<div id="sunrise" class="col-md-3">
+					<img class="sunmoonicon" src="sunriseimage.png" alt="Sunrise image" title="Sunrise time"/>
+					<p id="sunrisetime"></p>
+				</div>
+				<div id="low"class="col-md-2 infosection">
+					<p>Low: <span id="minTemp"></span><span class="tempUnit"> &deg;F</span></p>
+					<p id="minTempTime"></p>
+				</div>
+				<div id="high" class="col-md-2 infosection">
+					<p>High: <span id="maxTemp"></span><span class="tempUnit"> &deg;F</span></p>
+					<p id="maxTempTime"></p>
+				</div>
+				<div id="sunset" class="col-md-3">
+					<img class="sunmoonicon " src="sunsetimage.jpg" alt="Sunset image" title="Sunset time"/>
+					<p id="sunsettime"></p>
+				</div>
+				<div id="moon" class="col-md-2">
+					<img class="sunmoonicon img-responsive" id="moonimage" src="" alt="Moon phase image" title="Moon phase">
+					<p id="moonphase"></p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div id="todayhumidity" class="col-md-1 infosection">
+				</div>
+				<div id="todaywindspeed" class="col-md-1 infosection">
+				</div>
+				<div id="todaywindbearing" class="col-md-1 infosection">
+				</div>
+				<div id="todaywindgust" class="col-md-1 infosection">
+				</div>
+				<div id="todayvisibility" class="col-md-1 infosection">
+				</div>
+				<div id="todaycloudcover" class="col-md-1 infosection">
+				</div>
+				<div class="col-md-1 infosection">
+					<p>Dew Point: <span id="todaydewpoint"></span><span class="tempUnit"> &deg;F</span></p>
+				</div>
+				<div id="todayprecipitationtype" class="col-md-1 infosection">
+				</div>
+				<div id="todayprecipitationintensity" class="col-md-1 infosection">
+				</div>
+				<div id="todayozone" class="col-md-1 infosection">
+				</div>
+			</div>
+		</div>
+		
+		<div id="current">
+			<div class="row">
+				<div class="col-md-12">
+					<p id="todayheading" class="text-center weatherheading">The Current Weather</p>
+				</div>
+			</div>
+			<div id="currentsummary" class="row">
+				<div id="currentsummarytext" class="col-md-3 summarytext">
+				</div>
+				<div class="col-md-9">
+					<img id="currentsummaryimg" class="img-responsive summaryimg" src="" alt="Current weather image" title="Current weather" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 infosection">
+					<p>Temp: <span id="currenttemperature"></span><span class="tempUnit"> &deg;F</span></p>
+				</div>
+				<div class="col-md-1 infosection">
+					<p>Apparent temp: <span id="currentapparenttemperature"></span><span class="tempUnit"> &deg;F</span></p>
+				</div>
+				<div id="currentneareststorm" class="col-md-1 infosection">
+				</div>
+				<div id="currenthumidity" class="col-md-1 infosection">
+				</div>
+				<div id="currentwindspeed" class="col-md-1 infosection">
+				</div>
+				<div id="currentwindgust" class="col-md-1 infosection">
+				</div>
+				<div id="currentvisibility" class="col-md-1 infosection">
+				</div>
+				<div id="currentcloudcover" class="col-md-1 infosection">
+				</div>
+				<div id="currentwindbearing" class="col-md-1 infosection">
+				</div>
+				<div class="col-md-1 infosection">
+					<p>Dew Point: <span id="currentdewpoint"></span><span class="tempUnit"> &deg;F</span></p>
+				</div>
+				<div id="currentprecipitationtype" class="col-md-1 infosection">
+				</div>
+				<div id="currentprecipitationintensity" class="col-md-1 infosection">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="text-center">
+		<p>By Randal Obringer</p>
+	</div>
+</body>
+</html>

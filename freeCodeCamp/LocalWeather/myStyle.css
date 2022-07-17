@@ -1,0 +1,58 @@
+#data {
+	color: white;
+	font-size: 30px;
+}
+
+#changeTempUnitBtn{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+
+#weatherFrame {
+	background-color: rgb(50,50,50);
+	border-radius: 15px;
+}
+
+#poweredBy {
+	width:100px;
+	height:50px;
+	float: right;
+}
+
+.infosection {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: black;
+}
+
+.sunmoonicon {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: 3px;
+}
+
+.summaryimg {
+	width: 900px;
+	height:200px;
+}
+
+.normaltext {
+	color: white;
+}
+
+.weatherheading {
+	font-family: 'Berkshire Swash','Times New Roman','Arial';
+	font-size: 30px;
+	color: white;
+	background-color: purple;
+	border-radius: 15px;
+}
+
+.summarytext {
+	font-family: 'Berkshire Swash','Times New Roman','Arial';
+	font-size: 20px;
+	color: white;
+}

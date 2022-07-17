@@ -1,0 +1,20 @@
+#theMovie {
+	color: white;
+	text-align: right;
+	font-size: 20px;
+}
+
+#theQuote {
+	color: white;
+	font-size: 30px;
+}
+
+#quoteFrame {
+	background-color: purple;
+	border-radius: 15px;
+}
+
+#nextQuote {
+	float: right;
+	margin: 5px;
+}

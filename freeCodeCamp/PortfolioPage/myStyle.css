@@ -1,0 +1,86 @@
+body {
+	padding-top: 67px;
+}
+
+#navBarSection, #footerSection {
+	background-color: purple;
+	padding: 8px;
+}
+
+.navBtn {
+	float: right;
+}
+
+#portfolioAll {
+	background-color: #060606;
+}
+
+#portfolioHeader {
+	background-color: #99ccff;
+}
+
+#portfolioFrame {
+	background-color: #00ffff;
+}
+
+#portfolioContact {
+	background-color: #dddddd;
+}
+
+
+#portfolioFooter {
+	background-color: purple;
+}
+
+#profileImg {
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	float: right;
+	padding: 5px;
+	height: 200px;
+	width: 200px;
+}
+
+.tileImg {
+	height: 300px;
+	width: 300px;
+	border-style: solid;
+	border-width: 4px;
+	border-color: white;
+}
+
+.seperator {
+	color: white;
+	font-size: 24px;
+}
+
+.needsSpace {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.meOnTheWeb {
+	color: white;
+	font-size: 20px;
+	float: right;
+	border: 2px;
+	background-color: purple;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.meOnTheWeb:link{
+	color: white;
+	border-color: white;
+	background-color: purple;
+}
+
+.meOnTheWeb:hover{
+	color: purple;
+	border-color: white;
+	background-color: white;
+}
