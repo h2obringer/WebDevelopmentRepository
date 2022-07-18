@@ -6,3 +6,4 @@ URLs for projects in this repository:
 - Random Quote Machine: https://h2obringer.github.io/WebDevelopmentRepository/freeCodeCamp/RandomQuoteMachine/quoteMachine.html
 - Tribute Page: https://h2obringer.github.io/WebDevelopmentRepository/freeCodeCamp/TributePage/tribute.html
 - Wikipedia Viewer: https://h2obringer.github.io/WebDevelopmentRepository/freeCodeCamp/WikipediaViewer/wikipediaViewer.html
+- Personal Practice (bunch of javascript stuff): https://h2obringer.github.io/WebDevelopmentRepository/PersonalProjects/Practice/home.html
